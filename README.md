@@ -1,1 +1,9 @@
 # w-memory-rl
+Motivated by the fact that working memory is a neural mechanism that is important for reasoning and the guidance of decision-making and behavior ( motor, language, ... ), and noting the recent advances in Multi-task learning and Brain inspired ANN, I hope to shed light on how an artificial agent will behave in this setting and try to uncover any insights from its knowledge representation about the various tasks and how introducing brain inspired architectures and algorithms affect that. 
+
+Previous work has been done along those lines for motor control  on the MT10 benchmark as well as deepDraw, however there has been much less research done for memory. As a starting point, 
+the paper : Task representations in neural networks trained to perform many cognitive task has set a basic framework for studying many cognitive tasks including memory. Using a simple RNN they have showed that it is able to represent task specific representations that are brain like without any optimizations for the ANN architecture. I will build on this work by focusing entirely on working memory, for that I will use the deepmind memory benchmark and deepmind psychlab which provide RL environments for researchers wishing to train artificial agents on memory related tasks. There is a total of 12 tasks which is a perfect context for multi task learning. 
+
+Now the challenge with MTL is catastrophic forgetting. Here comes the many brain inspired neural architectures to mitigate that by enforcing sparsity across tasks and modelling the relationships between them. Previous work has been done in the context for auto-encoders  k-Sparse Autoencoders and more recently a more brain like approach has been proposed through modelling active dendrites in ANN ( Yannik Kilcher's video about this paper ). 
+
+Finally I wish to study the emerging representations per task and for the network as a whole. 
